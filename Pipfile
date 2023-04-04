@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+
+[requires]
+python_version = "3.11"
+
+[dev-packages]
+
+[scripts]
+queue = "python3 DataStructures/Queue/Python/playground.py"

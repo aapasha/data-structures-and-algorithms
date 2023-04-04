@@ -1,3 +1,5 @@
+# run this playground: pipenv run queue
+
 from queue import Queue
 
 q = Queue()
