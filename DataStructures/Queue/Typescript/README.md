@@ -1,6 +1,6 @@
 # Queue in Typescript
 
-A queue can easily be created using typescript's array data structure. The implementation provided in `queue.ts` is really just a glorified verson of what is presented below. The following would suffice for solving most problems.
+A queue can easily be created using typescript's array data structure. The implementation provided in `queue.ts` is really just a glorified version of what is presented below. The following would suffice for solving most problems.
 
 Creating a queue is simple with an array:
 

@@ -20,6 +20,12 @@ export class Queue<T> {
         return this.list.length == 0;
     }
 
+    peek(): T | void {
+        if (!this.isEmpty()) {
+            return this.list[0];
+        }
+    }
+
     getLength(): number {
         return this.list.length;
     }
