@@ -1,36 +1,36 @@
 export class Queue<T> {
-    list: T[];
+    items: T[];
 
     constructor() {
-        this.list = [];
+        this.items = [];
     }
 
     enqueue(item: T): Queue<T> {
-        this.list = [...this.list, item];
+        this.items = [...this.items, item];
         return this;
     }
 
     dequeue(): T {
-        const item = this.list[0];
-        this.list = this.list.slice(1);
+        const item = this.items[0];
+        this.items = this.items.slice(1);
         return item;
     }
 
     isEmpty(): boolean {
-        return this.list.length == 0;
+        return this.items.length == 0;
     }
 
     peek(): T | void {
         if (!this.isEmpty()) {
-            return this.list[0];
+            return this.items[0];
         }
     }
 
-    getLength(): number {
-        return this.list.length;
+    size(): number {
+        return this.items.length;
     }
 
     toString(): string {
-        return this.list.toString();
+        return this.items.toString();
     }
 }
