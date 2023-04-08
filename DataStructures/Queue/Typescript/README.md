@@ -12,11 +12,11 @@ To enqueue, just use the array `push` function:
 
 ```
 queue.push(1);  // queue is now [1]
-queue.push(2);  // queue is now [2, 5]
+queue.push(2);  // queue is now [1, 2]
 ```
 
 To dequeue, use the array `shift` function:
 
 ```
-let i = queue.shift();  // queue is now [5]
+let i = queue.shift();  // queue is now [2]
 ```
