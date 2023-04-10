@@ -12,11 +12,11 @@ To enqueue, just use the list `append` function:
 
 ```
 queue.append(1);  // queue is now [1]
-queue.append(2);  // queue is now [2, 5]
+queue.append(2);  // queue is now [1, 2]
 ```
 
 To dequeue, use the list `pop` function:
 
 ```
-i = queue.pop(0);  // queue is now [5]
+i = queue.pop(0);  // queue is now [2]
 ```
