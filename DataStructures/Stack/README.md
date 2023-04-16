@@ -1,4 +1,15 @@
 # Stack
+---
+
+#### Big-O
+
+###### Time complexity:
+_Access_: `O(n)` &nbsp;&nbsp; _Search_: `O(n)` &nbsp;&nbsp; _Insertion_: `O(1)` &nbsp;&nbsp;  _Deletion_: `O(1)`
+
+###### Space complexity: 
+`O(n)`
+
+#### Intro
 
 In computer science, a stack is an abstract data type that serves as a collection of elements, with two main operations:
 
