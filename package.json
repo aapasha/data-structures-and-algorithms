@@ -4,12 +4,15 @@
   "description": "Data Strucures and Algorithms implemented in Typescript and Python",
   "main": "index.js",
   "scripts": {
+    "dfs-rec": "tsc Algorithms/DepthFirstSearch/Typescript/DFSRecursive.ts && node Algorithms/DepthFirstSearch/Typescript/DFSRecursive.js",
+    "dfs-iter": "tsc Algorithms/DepthFirstSearch/Typescript/DFSIterative.ts && node Algorithms/DepthFirstSearch/Typescript/DFSIterative.js",
     "queue": "tsc DataStructures/Queue/Typescript/playground.ts && node DataStructures/Queue/Typescript/playground.js"
   },
   "keywords": [],
   "author": "aapasha",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^18.15.11",
     "typescript": "^5.0.3"
   }
 }
