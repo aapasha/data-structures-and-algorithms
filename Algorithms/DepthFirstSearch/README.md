@@ -3,7 +3,7 @@
 #### Big-O
 
 ###### Time complexity:
-`O(|V|)` where V is the number of vertices 
+`O(|V|)` where |V| is the number of vertices 
 
 ###### Space complexity: 
 `O(mb)` where m is the number of nodes in the longest path, and b is the number of neighbors for each m
