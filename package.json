@@ -6,6 +6,7 @@
   "scripts": {
     "dfs-rec": "tsc Algorithms/DepthFirstSearch/Typescript/DFSRecursive.ts && node Algorithms/DepthFirstSearch/Typescript/DFSRecursive.js",
     "dfs-iter": "tsc Algorithms/DepthFirstSearch/Typescript/DFSIterative.ts && node Algorithms/DepthFirstSearch/Typescript/DFSIterative.js",
+    "graph": "tsc DataStructures/Graph/Typescript/Graph.ts && node DataStructures/Graph/Typescript/graph.js",
     "queue": "tsc DataStructures/Queue/Typescript/playground.ts && node DataStructures/Queue/Typescript/playground.js"
   },
   "keywords": [],
