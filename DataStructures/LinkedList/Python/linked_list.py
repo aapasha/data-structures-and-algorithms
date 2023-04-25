@@ -2,6 +2,7 @@ from typing import TypeVar, Generic, List
 
 T = TypeVar('T')
 
+
 class Node(Generic[T]):
 
     def __init__(self, data: T) -> None:
@@ -9,13 +10,25 @@ class Node(Generic[T]):
         self.data = data
         self.next = None 
 
+
 class LinkedList:
 
-    def __init__(self, data: T) -> None:
+    def __init__(self, data: List[T]) -> None:
         
-        self.head = Node(data)
+        self.head = self.__add_at_init(data)
     
-    def addToStart(self, data: List[T]) -> None:
+    def __add_at_init(self, data: List[T]):
+        
+        dummy = Node(None)
+        cur_node = dummy
+
+        for datum in data:
+            cur_node.next = Node(datum)
+            cur_node = cur_node.next
+        
+        return dummy.next
+    
+    def __link_multiple_nodes(self, data: List[T]) -> List[Node]:
 
         dummy = Node(None)
         cur_node = dummy
@@ -24,35 +37,45 @@ class LinkedList:
             cur_node.next = Node(datum)
             cur_node = cur_node.next
         
-        cur_node.next = self.head
-        self.head = dummy.next
+        return [dummy.next, cur_node]
+
+    
+    def addToStart(self, data: List[T]) -> None:
+
+        head, end = self.__link_multiple_nodes(data)
+
+        if self.head.data != None:
+            end.next = self.head
+        
+        self.head = head
     
     def addToEnd(self, data: List[T]) -> Node:
+
+        if self.head.data == None:
+            return self.addToStart(data)
         
         old_end = self.head
         
         while old_end.next:
             old_end = old_end.next
+        
+        head, end = self.__link_multiple_nodes(data)
 
-        dummy = Node(None)
-        cur_node = dummy
+        old_end.next = head
         
-        for datum in data:
-            cur_node.next = Node(datum)
-            cur_node = cur_node.next
-        
-        old_end.next = dummy.next
-        
-        return dummy.next
+        return head
     
     def remove(self, data: T) -> Node | None:
 
         node = None
 
-        if self.head.data == data:
-            node = self.head
-            self.head = self.head.next
-            return node
+        if self.head.data == data: 
+            if self.head.next:
+                node = self.head
+                self.head = self.head.next
+                return node
+            else:
+                self.head.data = None
         else:
             prev_node = self.head
             cur_node = self.head.next
