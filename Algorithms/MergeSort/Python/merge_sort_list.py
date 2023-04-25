@@ -38,8 +38,3 @@ def merge_sort_list(list: List[int]) -> List[int]:
         list[k] = right[j]
         j += 1
         k += 1
-
-l = [32, 14, 40, 18, 7, 13, 28, 99, 7, 14, 3, 14]
-print(l)
-merge_sort_list(l)
-print(l)

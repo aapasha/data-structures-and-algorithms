@@ -1,4 +1,4 @@
-from typing import TypeVar, Generic, List
+from typing import TypeVar, Generic, List, Optional
 
 T = TypeVar('T')
 
@@ -65,7 +65,7 @@ class LinkedList:
         
         return head
     
-    def remove(self, data: T) -> Node | None:
+    def remove(self, data: T) -> Optional[Node]:
 
         node = None
 
