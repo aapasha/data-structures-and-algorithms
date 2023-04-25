@@ -11,7 +11,7 @@
 Source: [Big-O Cheat Sheet](https://www.bigocheatsheet.com)
 
 #### Intro
-In computer science, merge sort (also commonly spelled as mergesort) is an efficient, general-purpose, and comparison-based sorting algorithm. Most implementations produce a stable sort, which means that the order of equal elements is the same in the input and output. Merge sort is a divide-and-conquer algorithm.
+In computer science, merge sort (also commonly spelled as mergesort) is an efficient, general-purpose, and comparison-based sorting algorithm. Most implementations produce a stable sort, which means that the order of equal elements is the same in the input and output. Merge sort is a [divide-and-conquer](/ImportantTopics/DivideAndCongquer/README.md) algorithm.
 
 Conceptually, a merge sort works as follows:
 
