@@ -2,15 +2,15 @@ from DataStructures.LinkedList.Python.linked_list import Node, LinkedList
 from typing import Tuple
 
 
-def merge_sort_linked_list(head: Node) -> Node:
+def mergesort_linked_list(head: Node) -> Node:
 
     if head is None or head.next is None:
         return head
     
     left, right = split_list_in_half(head)
 
-    left = merge_sort_linked_list(left)
-    right = merge_sort_linked_list(right)
+    left = mergesort_linked_list(left)
+    right = mergesort_linked_list(right)
 
     result = sort_and_merge(left, right) 
 
@@ -34,14 +34,6 @@ def split_list_in_half(head: Node) -> Tuple[Node, Node]:
     
 
 def sort_and_merge(left: Node, right: Node) -> Node:
-
-    l1 = l2 = None
-    if left:
-        l1 = LinkedList([left.data])
-        l1.head.next = left.next
-    if right:
-        l2 = LinkedList([right.data])
-        l2.head.next = right.next
     
     if left is None:
         return right

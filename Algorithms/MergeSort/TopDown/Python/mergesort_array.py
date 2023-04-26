@@ -1,17 +1,18 @@
 from typing import List
 
-def merge_sort_list(list: List[int]) -> List[int]:
+
+def mergesort_array(array: List[int]) -> List[int]:
     
-    if len(list) <= 1:
+    if len(array) <= 1:
         return
     
-    mid = len(list) // 2
-    left = list[:mid]
-    right = list[mid:]
+    mid = len(array) // 2
+    left = array[:mid]
+    right = array[mid:]
 
     # recursive call on each half
-    merge_sort_list(left)
-    merge_sort_list(right)
+    mergesort_array(left)
+    mergesort_array(right)
 
     # pointers for traversing the two halves
     i = j = 0
@@ -21,20 +22,20 @@ def merge_sort_list(list: List[int]) -> List[int]:
 
     while i < len(left) and j < len(right):
         if left[i] <= right[j]:
-            list[k] = left[i]
+            array[k] = left[i]
             i += 1
         else:
-            list[k] = right[j]
+            array[k] = right[j]
             j += 1
         k += 1
     
     # get any remaining values from either half
     while i < len(left):
-        list[k] = left[i]
+        array[k] = left[i]
         i += 1
         k += 1
 
     while j < len(right):
-        list[k] = right[j]
+        array[k] = right[j]
         j += 1
         k += 1

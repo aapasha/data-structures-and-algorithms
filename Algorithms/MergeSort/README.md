@@ -2,6 +2,8 @@
 
 #### Big-O
 
+The space and time complexities are the same for both top-down and bottom-up implementations of mergesort. Although the bottom-up version does not require a call stack, it needs an auxiliary array for the merge operation.
+
 ###### Time complexity:
 `O(nlog(n))`
 
