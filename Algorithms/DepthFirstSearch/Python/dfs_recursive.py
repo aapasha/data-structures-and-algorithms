@@ -1,9 +1,9 @@
 
-def dfs(graph, current_vertex, visited=[]):
+def dfs(graph, current_node, visited=[]):
     
-    visited.append(current_vertex)
+    visited.append(current_node)
 
-    for neighbor in graph[current_vertex]:
+    for neighbor in graph[current_node]:
         if neighbor not in visited:
             visited = dfs(graph, neighbor, visited)
     return visited

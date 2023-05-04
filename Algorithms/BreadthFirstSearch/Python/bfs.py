@@ -1,18 +1,18 @@
 
-def dfs(graph, node):
+def bfs(graph, node):
     
-    stack, visited = [node], []
+    queue, visited = [node], []
 
-    while stack:
-        cur_node = stack.pop()
+    while queue:
+        cur_node = queue.pop(0)
         
         if cur_node in visited:
             continue
-
+        
         visited.append(cur_node)
-
+        
         for neighbor in graph[cur_node]:
-            stack.append(neighbor)
+            queue.append(neighbor)
     
     return visited
 
@@ -31,4 +31,4 @@ adjacency_matrix = {1: [2, 3, 7, 9],
                     10: [11],
                     11: []}
 
-print(dfs(adjacency_matrix, 1))
+print(bfs(adjacency_matrix, 1))
