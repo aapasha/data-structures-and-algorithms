@@ -1,3 +1,5 @@
+from typing import List
+
 
 def bfs(graph, node):
     

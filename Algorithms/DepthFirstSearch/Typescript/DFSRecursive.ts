@@ -1,5 +1,5 @@
 /**
- to run this: npm run dfs-rec 
+ to run this: npm run ts-dfs-rec 
  */
 
 const dfsRecursive = (

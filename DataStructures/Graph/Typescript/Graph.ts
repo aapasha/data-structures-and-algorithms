@@ -2,7 +2,7 @@
  * Graph implementation using an adjacency list (as opposed to an adjacency matrix)
  * source: https://ricardoborges.dev/data-structures-in-typescript-graph
  * 
- * run this: npm run graph
+ * run this: npm run ts-graph
  */
 class GraphNode<T> {
     data: T;

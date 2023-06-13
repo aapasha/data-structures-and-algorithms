@@ -1,4 +1,4 @@
-// run this playground: npm run queue
+// run this playground: npm run ts-queue
 
 import { Queue } from "./queue";
 

@@ -1,5 +1,5 @@
 "use strict";
-// run this playground: npm run queue
+// run this playground: npm run ts-queue
 Object.defineProperty(exports, "__esModule", { value: true });
 var queue_1 = require("./queue");
 var q = new queue_1.Queue();

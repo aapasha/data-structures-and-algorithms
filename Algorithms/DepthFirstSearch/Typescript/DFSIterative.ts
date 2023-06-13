@@ -1,5 +1,5 @@
 /**
- to run this: npm run def-iter
+ to run this: npm run ts-def-iter
  */
 
 const dfsIterative = (
