@@ -8,6 +8,7 @@
     "js-mergesort": "node Algorithms/Mergesort/TopDown/Javascript/playground.mjs",
     "js-queue": "node DataStructures/Queue/Javascript/queue.mjs",
     "js-quicksort": "node Algorithms/Quicksort/Javascript/playground.mjs",
+    "js-selectionsort": "node Algorithms/Selectionsort/Javascript/playground.mjs",
     "js-stack": "node DataStructures/Stack/Javascript/playground.mjs",
     "ts-dfs-iter": "tsc Algorithms/DepthFirstSearch/Typescript/DFSIterative.ts && node Algorithms/DepthFirstSearch/Typescript/DFSIterative.js",
     "ts-dfs-rec": "tsc Algorithms/DepthFirstSearch/Typescript/DFSRecursive.ts && node Algorithms/DepthFirstSearch/Typescript/DFSRecursive.js",
