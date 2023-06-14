@@ -11,4 +11,6 @@ python_version = "3.11"
 [dev-packages]
 
 [scripts]
+bubblesort = "python3 Algorithms/Bubblesort/Python/playground.py"
+mergesort = "python3 Algorithms/Mergesort/TopDown/Python/playground.py"
 queue = "python3 DataStructures/Queue/Python/playground.py"
