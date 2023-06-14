@@ -4,6 +4,7 @@
   "description": "Data Strucures and Algorithms implemented in Typescript and Python",
   "main": "index.js",
   "scripts": {
+    "js-binarysearch": "node Algorithms/BinarySearch/Javascript/playground.mjs",
     "js-bubblesort": "node Algorithms/Bubblesort/Javascript/playground.mjs",
     "js-mergesort": "node Algorithms/Mergesort/TopDown/Javascript/playground.mjs",
     "js-queue": "node DataStructures/Queue/Javascript/queue.mjs",

@@ -24,8 +24,9 @@ const partition = (array, low, high) => {
     // compare each element with pivot
     for (let j = low; j < high; j++) {
         
+        // if element is smaller than pivot then swap it 
         if (array[j] <= pivot) {
-            // if element is smaller than pivot then swap it 
+            
             i++;
 
             // swap element at i with element at j
